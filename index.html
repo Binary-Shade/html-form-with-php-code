@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {color: #FF0000;}
+        </style>
+</head>
+<body>
+    <h1>-loginpage-</h1>
+<form action="something.php" method="POST">
+    name : <input type="text" name="name" placeholder="enter your name"> * <br>
+    <span class="error"><?php echo $n_err;?></span>
+    email : <input type="text" name="email" placeholder="Enter your mail"><br>
+    website : <input type="text" name="url" placeholder="Enter your website url"><br>
+    phone : <input type="text" name="phone" placeholder="Enter your phone number"><br>
+    Gender : <br>
+     <label for="gender">
+        <input type="radio" name="gender" value="male">male <br>
+        <input type="radio" name="gender" value="female">female <br>
+        <input type="radio" name="gender" value="other">other <br>
+    </label>
+
+
+    <input type="submit" value="register">
+</form>
+    
+</body>
+</html>
