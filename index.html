@@ -7,26 +7,38 @@
     <title>Document</title>
     <style>
         .error {color: #FF0000;}
+        .w3-button {width:150px;}
         </style>
 </head>
 <body>
-    <h1>-loginpage-</h1>
-<form action="something.php" method="POST">
-    name : <input type="text" name="name" placeholder="enter your name"> * <br>
-    <span class="error"><?php echo $n_err;?></span>
-    email : <input type="text" name="email" placeholder="Enter your mail"><br>
-    website : <input type="text" name="url" placeholder="Enter your website url"><br>
-    phone : <input type="text" name="phone" placeholder="Enter your phone number"><br>
-    Gender : <br>
-     <label for="gender">
-        <input type="radio" name="gender" value="male">male <br>
-        <input type="radio" name="gender" value="female">female <br>
-        <input type="radio" name="gender" value="other">other <br>
-    </label>
-
-
-    <input type="submit" value="register">
+    <div class="w3-bar w3-black">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">help</a>
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+      </div> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"">
+    <div class="w3-container w3-center w3-panel w3-border"><h1><b>LOGIN PAGE</b></h1></div>
+    <div class="w3-container">
+<form action="something.php" method="POST" class="w3-container">
+    <label class="w3-text-blue"><b>Name</b></label>
+    <input class="w3-input w3-border"type="text" name="name"> <br>
+    <label class="w3-text-blue"><b>Email</b></label>
+    <input class="w3-input w3-border"type="text" name="email"> <br>
+    <label class="w3-text-blue"><b>web site</b></label>
+    <input class="w3-input w3-border"type="text" name="url"> <br>
+    <label class="w3-text-blue"><b>Phone number</b></label>
+    <input class="w3-input w3-border"type="text" name="phone"> <br>
+</div>
+    upload an image: <input type="file" name="image" id="upload image"><br>
+    <div class="w3-container w3-center">
+<p><button class="w3-button w3-green w3-round-large  "><b>submit</b></button></p>
+        </div>
 </form>
+</div>
+
     
+
+
 </body>
 </html>
