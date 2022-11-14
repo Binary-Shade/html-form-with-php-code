@@ -21,6 +21,7 @@
         $data = htmlspecialchars($data);
         return $data;
     }
+        
     print_data($name);
     print_data($mail);
     print_data($url);   
@@ -30,11 +31,13 @@
         echo $read;
         echo "<br>";
     }
+        
     if(preg_match("/^[a-zA-z' ]/",$name)){
         echo "name is valid";
     }else{
         echo "invalid";
     }
+        
     echo "<br>";
     if(!filter_var($mail,FILTER_VALIDATE_EMAIL)){
         echo "invalid mail";
